@@ -10,7 +10,7 @@ async function bootstrap() {
     .setTitle('Swagger-Demo')
     .setDescription('The description for your API')
     .setVersion('1.0')
-    .addTag('public', 'Controller for public access')
+    .addTag('math', 'methods for calculation')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
