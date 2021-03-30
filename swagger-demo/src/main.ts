@@ -8,9 +8,10 @@ async function bootstrap() {
   // Copy the following code to your projects main.ts
   const config = new DocumentBuilder()
     .setTitle('Swagger-Demo')
-    .setDescription('The description for your API')
+    .setDescription('Swagger example for DHBW lecture')
     .setVersion('1.0')
-    .addTag('math', 'methods for calculation')
+    //.addTag('math', 'methods for calculation')
+    //.addTag('util', 'methods general utility')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
